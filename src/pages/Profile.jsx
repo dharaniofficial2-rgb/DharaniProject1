@@ -49,7 +49,7 @@ function Profile() {
         Track Order
       </button>
 
-      {status && <div className="status">{status}</div>}
+      {status && <div className={`status ${status === "out for delivery" ? "out" : ""}`}>{status}</div>}
     </div>
   );
 }

@@ -510,8 +510,9 @@ body {
   border: 2px solid #ffe5e5;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
-.status:contains("out for delivery") {
+.status.out {
   color: #b30000;
+  font-weight: bold;
 }
 .status {
   color: #333;
