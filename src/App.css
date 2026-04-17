@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #1a1a1a;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(135deg, #ff0000, #b30000);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: yellow;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: #ffffff;
+  color: #b30000;
+  min-height: 90vh;
+  gap: 40px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #b30000;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  transition: all 0.4s linear;
+}
+
+
+.hero-left h1:hover {
+  letter-spacing: 3px;
+  color: #ff1a1a;
+}
+
+
+.tagline {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff1a1a;
+  margin-bottom: 20px;
+  transition: all 0.4s linear;
+}
+
+.tagline:hover {
+  color: #b30000;
+}
+
+.hero-left p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 500px;
+  transition: all 0.4s linear;
+}
+
+.hero-left p:hover {
+  color: #000;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #b30000, #ff1a1a);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  box-shadow: 0 5px 15px rgba(179, 0, 0, 0.3);
+}
+.btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #ff1a1a, #b30000);
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.slider-image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+  border: 3px solid #b30000;
+  box-shadow: 0 20px 50px rgba(179, 0, 0, 0.2);
+  transition: all 0.4s linear;
+}
+.slider-image:hover {
+  transform: scale(1.05);
+}
+.fade {
+  animation: fadeIn 1s linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.special-section {
+  padding: 60px 10%;
+  text-align: center;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #b30000;
+  margin-bottom: 40px;
+}
+.special-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+.special-card {
+  background: #fff;
+  border: 2px solid #ffcccc;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.special-card:hover {
+  transform: translateY(-10px);
+  border-color: #b30000;
+  box-shadow: 0 15px 30px rgba(179, 0, 0, 0.2);
+}
+.special-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.special-card h3 {
+  color: #b30000;
+  margin-bottom: 5px;
+}
+.special-card p {
+  color: #555;
+  font-size: 14px;
+}
+.view-btn {
+  margin-top: 40px;
+  background: #b30000;
+  color: white;
+}
+.view-btn:hover {
+  background: #ff1a1a;
+}
+.about-page {
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe5e5, #ffffff);
+  text-align: center;
+}
+.about-page h1 {
+  font-size: 36px;
+  font-weight: 700;
+  background: linear-gradient(to right, #d00000, #ff4d4d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.about-text {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  font-size: 17px;
+  color: #444;
+  line-height: 1.8;
+}
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+.about-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #f1caca;
+}
+.about-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, #d00000, #ff4d4d);
+}
+.about-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(208, 0, 0, 0.2);
+}
+.about-box h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #d00000;
+}
+.about-box p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .about-page h1 {
+    font-size: 28px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+}
+.services-page {
+  padding: 60px 20px;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  background: #ffffff; 
+}
+.services-title {
+  font-size: 42px;
+  font-weight: 900;
+  color: #b30000;
+  margin-bottom: 10px;
+  transition: all 0.4s linear;
+}
+.services-title:hover {
+  letter-spacing: 2px;
+  color: #ff1a1a;
+}
+.services-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  transition: all 0.4s linear;
+}
+
+.services-subtitle:hover {
+  color: #b30000;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+.service-card {
+  background: #fff;
+  border: 2px solid #ffe5e5;
+  border-radius: 18px;
+  padding: 25px;
+  transition: all 0.4s linear;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: #b30000;
+  box-shadow: 0 15px 35px rgba(179, 0, 0, 0.2);
+}
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  transition: all 0.4s linear;
+}
+.service-card:hover .icon {
+  transform: scale(1.2);
+}
+.service-card h2 {
+  color: #b30000;
+  margin: 10px 0;
+  transition: all 0.4s linear;
+}
+.service-card p {
+  color: #555;
+  font-size: 14px;
+  transition: all 0.4s linear;
+}
+.price {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ff1a1a;
+  transition: all 0.4s linear;
+}
+.service-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #b30000, #ff1a1a);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+
+.service-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #ff1a1a, #b30000);
+}
+.contact {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+.contact h1 {
+  font-size: 42px;
+  font-weight: 900;
+  color: #b30000;
+  margin-bottom: 30px;
+  transition: all 0.4s linear;
+}
+
+.contact h1:hover {
+  letter-spacing: 2px;
+  color: #ff1a1a;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 450px;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #ffe5e5;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.4s linear;
+  background: #fff;
+}
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #b30000;
+  box-shadow: 0 0 10px rgba(179, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+.contact textarea {
+  min-height: 120px;
+  resize: none;
+}
+.contact .btn {
+  margin-top: 10px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #b30000, #ff1a1a);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  box-shadow: 0 5px 15px rgba(179, 0, 0, 0.3);
+}
+.contact .btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #ff1a1a, #b30000);
+}
+.contact {
+  background: #fff;
+}
+.contact input,
+.contact textarea {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.tracking {
+  min-height: 100vh;
+  padding: 70px 20px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+.tracking h1 {
+  font-size: 42px;
+  font-weight: 900;
+  color: #b30000;
+  margin-bottom: 30px;
+  transition: all 0.4s linear;
+}
+
+.tracking h1:hover {
+  letter-spacing: 2px;
+  color: #ff1a1a;
+}
+.tracking input {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px 15px;
+  border-radius: 12px;
+  border: 2px solid #ffe5e5;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 20px;
+  transition: all 0.4s linear;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.tracking input:focus {
+  border-color: #b30000;
+  box-shadow: 0 0 12px rgba(179, 0, 0, 0.25);
+  transform: scale(1.03);
+}
+.tracking .btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #b30000, #ff1a1a);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  box-shadow: 0 5px 15px rgba(179, 0, 0, 0.3);
+}
+
+.tracking .btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #ff1a1a, #b30000);
+}
+.status {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 400px;
+  transition: all 0.4s linear;
+  background: #fff;
+  border: 2px solid #ffe5e5;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+.status:contains("out for delivery") {
+  color: #b30000;
+}
+.status {
+  color: #333;
+}
+
+.status::before {
+  content: "📍 ";
+}
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+.special-grid,
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .special-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left h1 {
+    font-size: 35px;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
+}
